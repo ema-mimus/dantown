@@ -1,0 +1,128 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  overflow-x: hidden;
+  max-width: 2200px;
+  margin: auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.colored_text {
+  color: #000070;
+}
+.body {
+  width: 90%;
+  margin: 1em auto;
+  max-width: 1800px;
+}
+.btn {
+  background-color: #000070;
+  color: #fff;
+  font-size: medium;
+  border-radius: 5px;
+  border: 0;
+  padding: 0 20px;
+}
+.navbar-brand {
+  margin-right: unset;
+}
+.logo {
+  width: 200px;
+}
+.nav {
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px #c9c7c7;
+}
+.floating_icons {
+  opacity: 0.2;
+}
+.float_icons {
+  display: none;
+}
+
+/*Terms and Conditions */
+.terms_and_conditions {
+  width: 90%;
+  margin: 3em auto;
+}
+.terms_and_conditions h2 {
+  margin-bottom: 1em;
+}
+.headers {
+  color: #2c3e50;
+}
+.paras {
+  text-align: justify;
+}
+
+/* Footer */
+.footer {
+  position: relative;
+  margin: 12em auto 4em;
+}
+.footer_img_container {
+  position: absolute;
+  bottom: 0;
+  left: -90px;
+  z-index: -1;
+}
+.footer_items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 2em auto;
+}
+.featured_list_container,
+.footer_items_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_items_container {
+  flex-direction: column;
+}
+
+/* Media Queries */
+@media (max-width: 1440px) {
+}
+@media (max-width: 992px) {
+  .navbar-light .navbar-toggler {
+    border: none;
+  }
+  .price_section{
+    flex-direction: row;
+    padding: 0 1em 0 0;
+  }
+  .bitcoin_price{
+    margin-left: auto;
+  }
+  .get_started_btn_container {
+    margin-right: 0;
+  }
+  .get_started_btn_text {
+    padding: 0.5em;
+  }
+}
+@media (max-width: 768px) {
+  .footer_items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer_items_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer_items {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 468px) {
+  .footer_items {
+    grid-template-columns: 1fr;
+  }
+}
